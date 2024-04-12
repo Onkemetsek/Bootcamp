@@ -4,15 +4,33 @@ body{
     background-color: whitesmoke;
     text-decoration: none;
 }
+h2{
+    font-family: "Lato", sans-serif;
+    color: red;
+    font-size: 40px;
+}
+h3{
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+}
+
 header{
     display: flex;
     justify-content: space-around;
 }
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    background-color: black;
+}
 .logo{
-    display: block;
+    float: left;
+    display: flex;
     position: fixed;
     color: red;
-    margin-left: 30px;
+    margin-left: 10px;
     font-size: 18px;
 }
 .navbar{
@@ -34,8 +52,8 @@ header{
  
 #img{
     background: none;
-    margin-top: 60px;
-    margin-left: 10px;
+    margin-top: 0px;
+    margin-left: 20px;
     padding: 16px 20px;
     
 }
@@ -56,4 +74,19 @@ video{
     width: 95%;
     height: 89%;
     border: 2px inset red;
+}
+
+.column{
+    display: flex;
+    column-gap: 5px;
+    margin-left: 30px;
+}
+.left{
+    width: 60%;
+    padding: 20pxpx 20px; 
+    font-size: 25px;
+}
+.right{
+    width: 40%;
+    padding: 20px 20px;
 }
