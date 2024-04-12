@@ -20,7 +20,7 @@ header{
 }
 .logo{
     float: left;
-    display: flex;
+    display: inline;
     position: fixed;
     color: red;
     margin-left: 10px;
