@@ -19,8 +19,6 @@ header{
     justify-content: space-around;
 }
 .logo{
-    
-    display: block;
     position: fixed;
     top: 0px;
     color: red;
