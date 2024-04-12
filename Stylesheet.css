@@ -19,12 +19,13 @@ header{
     justify-content: space-around;
 }
 .logo{
-    float: left;
-    display: inline;
+    
+    display: block;
     position: fixed;
+    top: 0px;
     color: red;
-    margin-left: 10px;
-    font-size: 18px;
+    margin-left: 15px;
+    font-size: 12px;
 }
 .navbar{
     overflow: hidden;
