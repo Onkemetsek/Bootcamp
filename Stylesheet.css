@@ -99,13 +99,13 @@ video{
     background: none;
     margin: 15px;
     margin-left: 500px;
-    padding: 10px 14px;
+    padding: 8px 8px;
 }
 
 .about{
     text-align: center;
-    margin-top: 1opx;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
     font-family: "Lato", sans-serif;
 }
