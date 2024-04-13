@@ -71,12 +71,14 @@ video{
 .column{
     display: flex;
     column-gap: 5px;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-left: 20px;
     gap: 30px;
 }
 .left{
     width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .right{
     width: 40%;
