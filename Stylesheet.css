@@ -88,3 +88,10 @@ video{
 }
 
 /*About Me Page*/
+
+.headings{
+    margin: 20px;
+    font-family: "Lato", sans-serif;
+    color: red;
+    font-size: 60px;
+}
