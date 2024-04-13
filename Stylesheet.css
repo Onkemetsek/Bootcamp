@@ -112,12 +112,12 @@ video{
 
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
 }
 .project {
-    width: 180px;
+    width: 200px;
     height: 180px; 
 }
