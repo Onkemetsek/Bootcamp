@@ -71,20 +71,23 @@ video{
 .column{
     display: flex;
     column-gap: 5px;
-    margin-left: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 30px;
 }
 .left{
     width: 60%;
-    padding: 20pxpx 20px; 
-    font-size: 25px;
 }
 .right{
     width: 40%;
-    padding: 20px 20px;
+    padding-top: 10px;
+    padding-left: 60px;
+    align-items: center;
 }
-
-#photo{
+.picture{
     border-radius: 50%;
+    width: 90px;
+    height: 80px;
 }
 
 /*About Me Page*/
