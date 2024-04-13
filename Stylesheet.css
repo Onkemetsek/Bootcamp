@@ -41,7 +41,9 @@ header{
     font: 80px;
     text-decoration: none;
 }
- 
+.navbar a:hover{
+    color: red;
+} 
 #img{
     background: none;
     margin-top: 20px;
