@@ -158,7 +158,65 @@ video{
 }
 
 /*Contact Me Page*/
-.title{
-    padding-top: 40px;
-    text-align: center;
+.contact{
+    width: 80%;
+    margin: 80px auto;
+}
+.contact-box{
+    display: flex;
+}
+.contact-left{
+    flex-basis: 40%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background-color: azure;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    padding-bottom: 2px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 5px;
+    display: block;
+}
+button{
+    background: navy;
+    width: 80px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 30px;
+    font-size: 20px;
+}
+.contact-left{
+    background-color: white;
 }
