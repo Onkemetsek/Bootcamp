@@ -115,6 +115,12 @@ video{
 .footer a:hover{
     color: red;
 }
+.map{
+    float: right;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
 
 /*About Me Page*/
 .headings{
