@@ -189,6 +189,9 @@ input{
     outline: none;
     padding-bottom: 2px;
 }
+input:hover{
+    background-color: red;
+}
 textarea{
     width: 100%;
     border: 1px solid grey;
