@@ -150,3 +150,9 @@ video{
     height: 180px; 
     padding-bottom: 180px;
 }
+
+/*Contact Me Page*/
+.title{
+    padding-top: 40px;
+    text-align: center;
+}
