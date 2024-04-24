@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css">
+
+    <script src="Portfolio Website.js"></script>
 </head>
 
 <body>
@@ -33,16 +35,27 @@
     <div class="About">
         <h2>About Me</h2>
         <h2>Personal Information</h2>
-        <h3>My name is Onkemetse Koikoi, I am a 23 year old female from Mahikeng which is located in the North West province of South Africa. I am currently looking to get into tech as a software developer.</h3>
+        <h3 id="about"></h3>
+        <script>
+            document.getElementById("about").innerHTML = myAbout;
+        </script>
         <hr style=" width: 80%; size: 2px; color: red;">
         
         
         <div>
             <h2>Educational Background</h2>
-            <h3>Bachelor of Laws</h3>
+            <h3 id="quali1"></h3>
+            <script>
+                document.getElementById("quali1").innerHTML = qualifications[0];
+            </script>
             <i class="ri-graduation-cap-fill"> 2022 </i>
+
             <br><br>
-            <h3>National Senior Certificate</h3>
+
+            <h3 id="quali2"></h3>
+            <script>
+                document.getElementById("quali2").innerHTML = qualifications[1];
+            </script>
             <i class="ri-graduation-cap-fill"> 2018 </i>
             <br>
             <br>
@@ -51,18 +64,36 @@
         <h2>Projects</h2>
         <h3>Things I have built before:</h3>
     </div>
-
+    
     <div class="projects">
         <div class="project">
-            <img src="Projects.png" alt="Picture of women fishing in light bulb" style="height: 100px; width: 130px;">
-            <h3>Portfolio Website</h3>
-            <p>This is a portfolio website I built as a beginner using html and css. It has a welcome page, an about and a contact us page.</p>
+            <img id="pro1" width="100px" height="130px">
+            <script>
+                document.getElementById("pro1").innerHTML = projectOne.image;
+            </script>
+            <h3 id="heading1"></h3>
+            <script>
+                document.getElementById("heading1").innerHTML = projectOne.name;
+            </script>
+            <p id="para1"></p>
+            <script>
+                document.getElementById("para1").innerHTML = projectOne.description;
+            </script>
         </div>
 
         <div class="project">
-            <img src="Projects.png" alt="Picture of women fishing in light bulb" style=" width: 130px;">
-            <h3>Guess the number</h3>
-            <p>This is a game I created using python. In this game the computer chooses a random number within a range, afterwhich the user tries to guess the number. The game ends when the user guesses the number correctly.</p>
+            <img id="pro2" src="projectsImage" "100px" height="130px">
+            <script>
+                document.getElementById("pro2").innerHTML = imageArray[0];
+            </script>
+            <h3 id="heading2"></h3>
+            <script>
+                document.getElementById("heading2").innerHTML = projectTwo.name;
+            </script>
+            <p id="para2"></p>
+            <script>
+                document.getElementById("para2").innerHTML = projectTwo.description;
+            </script>
         </div>
     </div>
     

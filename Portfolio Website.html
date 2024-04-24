@@ -47,7 +47,24 @@
     </div>
 
     <!--Contents of the Columns-->
-    <div></div>
+    <div class="column">
+        <div class="left">
+            <h2 id="name">This is my name</h2>
+            <script>
+                document.getElementById("name").innerHTML = myName;
+            </script>
+            
+            <h3 id="bio">This is my bio</h3>
+            <script>
+                document.getElementById("bio").innerHTML = myBio;
+            </script>
+        </div>
+
+        <div class="right">
+            <img src="My_Picture.jpg" alt="My Photo" id="picture">
+            
+        </div>
+    </div>
     
     <footer>
         <hr style=" size: 2px; color: red; width: 100%;">

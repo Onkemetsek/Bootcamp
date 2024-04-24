@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css">
+
+    <script src="contact.js"></script>
 </head>
 
 <body>
@@ -28,65 +30,38 @@
     <div class="contact">
         <h2>Contact Us</h2>
         <h3> I would love to hear from you. Please use the form below to submit a query or to send a message</h3>
+    </div>    
+      
         
-        <div class="contact-box">
-            <div class="contact-left">
-                <h3 style="color: red;">Reach us here</h3>
-
-                <table>
-                    <tr>
-                        <td><i class="ri-mail-line"></i></td>
-                        <td>myemailaddress@gmail.com</td>
-                    </tr>
-
-                    <tr>
-                        <td><i class="ri-phone-line"></i></td>
-                        <td>061 234 5678</td>
-                    </tr>
-
-                    <tr>
-                        <td><i class="ri-map-pin-line"></i></td>
-                        <td>1234 Specific Street, Mahikeng 2735</td>
-                    </tr>
-                </table>
+        <form
+            onsubmit="handleFormSubmit(event)"
+        >
+            <div id="top">
+                <label>
+                    Name(s):
+                    <input id="name" type="name" name="name" required>
+                </label>
+                <label>
+                    Surname:
+                    <input id="surname" type="surname" name="surname" required>
+                </label>
             </div>
+            <label>
+                Your email:
+                <input id="email" type="email" name="email" required>
+            </label>
+            <label>
+                Your message:
+                <textarea id="message" name="message" required></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
+    
 
-            <div class="contact-right">
-                <h3 style="color: red;">Message Us</h3>
-                <form>
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="Jane">
-                        </div>
 
-                        <div class="input-group">
-                            <label>Surname</label>
-                            <input type="text" placeholder="Doe">
-                        </div>
-                    </div>
 
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label>Phone Number</label>
-                            <input type="text" placeholder="0123456792">
-                        </div>
 
-                        <div class="input-group">
-                            <label>Email</label>
-                            <input type="text" placeholder="janedoe@gmail.com">
-                        </div>
-                    </div>
-
-                    <label>Message</label>
-                    <textarea rows="10" placeholder="Write your message here"></textarea>
-                    
-                    <button type="submit">SUBMIT</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <br><br>
 
     <footer>
         <hr style=" size: 2px; color: red; width: 100%;">

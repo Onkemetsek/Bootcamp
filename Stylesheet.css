@@ -85,13 +85,13 @@ video{
 .right{
     width: 40%;
     padding-top: 10px;
-    padding-left: 60px;
-    align-items: center;
+    padding-left: 180px;
+    justify-content: left;
 }
-.picture{
+#picture{
     border-radius: 50%;
-    width: 90px;
-    height: 80px;
+    width: 300px;
+    height: 280px;
 }
 .footer{
     margin-left: 20px;
@@ -159,48 +159,46 @@ video{
 
 /*Contact Me Page*/
 .contact{
-    width: 80%;
-    margin: 80px auto;
+    padding-top: 50px;
+    text-align: center;
 }
-.contact-box{
+form{
+    display: block;
+    justify-content: left;
+    margin-left: 400px;
+    padding: 20px;;
+    background-color: lightgrey;
+    width: 600px;
+    height: 500px;
+    border-radius: 2%;
+}
+#top{
     display: flex;
-}
-.contact-left{
-    flex-basis: 40%;
-    padding: 40px 60px;
-}
-.contact-right{
-    flex-basis: 60%;
-    padding: 40px 60px;
-    background-color: azure;
-}
-.input-row{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-input-row .input-group{
-    flex-basis: 45%;
+    gap: 50px;
 }
 input{
-    width: 100%;
+    width: 70%;
     border: none;
     border-bottom: 1px solid grey;
     outline: none;
     padding-bottom: 2px;
 }
 input:hover{
-    background-color: red;
+    border: 1px solid red;
 }
 textarea{
-    width: 100%;
+    width: 90%;
+    height: 60%;
     border: 1px solid grey;
     outline: none;
     padding: 10px;
     box-sizing: border-box;
 }
+textarea:hover{
+    border: 1px solid red;
+}
 label{
-    margin-bottom: 5px;
+    padding-bottom: 15px;
     display: block;
 }
 button{
@@ -212,14 +210,4 @@ button{
     height: 35px;
     margin-top: 15px;
     border-radius: 30px;
-}
-tr td:first-child{
-    padding-right: 20px;
-}
-tr td{
-    padding-top: 30px;
-    font-size: 20px;
-}
-.contact-left{
-    background-color: white;
 }
