@@ -8,8 +8,8 @@ function handleFormSubmit(event){
     const userEmail = document.getElementById("email");
     const userMessage = document.getElementById("message");
 
-    const checkName = userName.value.trim() !== '';
-    const checkSurname = userSurname.value.trim() !== '';
+    const checkName = userName.value.trim() !== '' & userName.validity.validity;
+    const checkSurname = userSurname.value.trim() !== '' & userSurname.validity.valid;
     const checkEmail = userEmail.value !== '' & userEmail.validity.valid;
     
     let checkMessage = false;
@@ -24,7 +24,8 @@ function handleFormSubmit(event){
 
     if(isFormValid){
         //grab data
-        const formData = new formData(event.target)
+        const formData = new FormData(event.target)
+        console.log(formData);
         fetch('https://formspree.io/f/mdoqyydz', 
             {
             method: 'Post',
