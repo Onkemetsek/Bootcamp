@@ -7,20 +7,17 @@ let myAbout = "My name is Onkemetse Koikoi, I am a 23 year old female from Mahik
 const qualifications = ["Bachelor of Laws", "National Senior Certificate"];
 
 
-let imageArray = [];
-let projectsImage = new Image();
-projectsImage.src = 'projects.png';
-imageArray.push(projectsImage);
+//let imageArray = [];
+//let projectsImage = new Image();
+//projectsImage.src = 'projects.png';
+//imageArray.pu
+let projimage = document.createElement("img")
+projimage.src = 'projects.png'
+
+const projectsArray = ["Portfolio Website", "Guess the number"]
 
 
-let projectOne = {
-    image : projectsImage,
-    name : 'Portfolio Website',
-    description: 'This is a portfolio website I built as a beginner, using HTML and CSS. It has a welcome page, an about and a contact us page.'
-}
+let firstDescription = "This is a portfolio website I built as a beginner, using HTML and CSS. It has a welcome page, an about and a contact us page."
 
-let projectTwo = {
-    image : projectsImage,
-    name : 'Guess the number',
-    description : 'This is a game I created using pyhton. In this game the computer chooses a random number withn a range, afterwhich the user tries to guess the number. The game ends when the user guesses the number correctly.'
-}
+let secondDescription = "This is a game I created using pyhton. In this game the computer chooses a random number withn a range, afterwhich the user tries to guess the number. The game ends when the user guesses the number correctly."
+
