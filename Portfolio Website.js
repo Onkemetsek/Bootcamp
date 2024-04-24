@@ -1,0 +1,3 @@
+//asignning my information into variables
+let myName = "Onkemetse Bogadi Bridgette Koikoi";
+let myBio = "Onkemetse Koikoi is a Bachelor of Laws graduate from the North-West University. She is currently trying to acquire a job in tech because she has a great interest in becoming a software developer and eventually a full-stack software developer. My interest in coding began in high school when we were introduced to scratch. This interest grew as we were introduced to Delphi in Grade 12. In 2023 I was reintroduced to coding by a former lecturer, I did a little bit of research on the idea and ended up learning a bit of python. In 2024 I decided to fully focus my efforts on learning how to code, starting with front-end development.";
