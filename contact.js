@@ -23,8 +23,44 @@ function handleFormSubmit(event){
     const isFormValid = checkName && checkSurname && checkEmail && checkMessage;
 
     if(isFormValid){
-        gnkg
+        //grab data
+        const formData = new formData(event.target)
+        fetch('https://formspree.io/f/mdoqyydz', 
+            {
+            method: 'Post',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            } 
+            }
+        )
+        .then(response => response.json())
+        .then(data => {
+            if(data.ok){
+                alert('Email has been sent')
+            }
+        })
+
     }else{
-        alert()
+        //display span
+        if(checkName !== true){
+            const nameSpan = document.getElementById("name-span")
+            nameSpan.classList.remove('hidden')
+        }
+
+        if(checkSurname !== true){
+            const surnameSpan = document.getElementById("surname-span") 
+            surnameSpan.classList.remove('hidden')
+        }
+
+        if(checkEmail !== true){
+            const emailSpan = document.getElementById("email-span")
+            emailSpan.classList.remove('hidden') 
+        }
+
+        if(checkMessage !== true){
+            const messageSpan = document.getElementById("message-span")
+            messageSpan.classList.remove('hidden')
+        }
     }
 }

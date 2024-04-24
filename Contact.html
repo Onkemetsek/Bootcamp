@@ -39,20 +39,24 @@
             <div id="top">
                 <label>
                     Name(s):
-                    <input id="name" type="name" name="name" required>
+                    <input id="name" type="name" name="name" required>   
+                    <span class="hidden" id="name-span">Name is invalid</span>         
                 </label>
                 <label>
                     Surname:
                     <input id="surname" type="surname" name="surname" required>
+                    <span class="hidden" id="surname-span">Surname is invalid</span>
                 </label>
             </div>
             <label>
                 Your email:
                 <input id="email" type="email" name="email" required>
+                <span class="hidden" id="email-span">Email is invalid</span>
             </label>
             <label>
                 Your message:
                 <textarea id="message" name="message" required></textarea>
+                <span class="hidden" id="message-span">Message is invalid</span>
             </label>
             <!-- your other form fields go here -->
             <button type="submit">Send</button>

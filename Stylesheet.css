@@ -177,7 +177,7 @@ form{
     gap: 50px;
 }
 input{
-    width: 70%;
+    width: 76%;
     border: none;
     border-bottom: 1px solid grey;
     outline: none;
@@ -201,6 +201,9 @@ label{
     padding-bottom: 15px;
     display: block;
 }
+.hidden{
+    display: none;
+}
 button{
     background: navy;
     width: 80px;
@@ -211,3 +214,8 @@ button{
     margin-top: 15px;
     border-radius: 30px;
 }
+span{
+    display: inline-flex;
+    color: red;
+}
+
